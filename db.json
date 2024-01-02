@@ -1,0 +1,53 @@
+{
+  "lists": [
+    {
+      "title": "Whole Foods",
+      "items": [
+        {
+          "id": 1,
+          "itemName": "Milk",
+          "purchased": false
+        },
+        {
+          "id": 2,
+          "itemName": "Oats",
+          "purchased": false
+        },
+        {
+          "id": 3,
+          "itemName": "potatoes",
+          "purchased": false
+        },
+        {
+          "id": 4,
+          "itemName": "",
+          "purchased": true
+        },
+        {
+          "id": 5,
+          "itemName": "Eggs",
+          "purchased": true
+        },
+        {
+          "id": 6,
+          "itemName": "A2 milk",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2024-01-02T17:52:50.057Z",
+      "id": 2
+    },
+    {
+      "title": "Wegmans",
+      "items": [
+        {
+          "id": 1,
+          "itemName": "Green beans",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2024-01-02T17:49:18.191Z",
+      "id": 3
+    }
+  ]
+}
