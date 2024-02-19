@@ -14,7 +14,7 @@ const doEdit = (e) => {
   editing.value = e
 }
 const purchasedItem = (list) => {
-  fetch('http://localhost:3000/lists/' + props.list.id, {
+  fetch('http://localhost:3000/shoppinglists/' + props.list._id, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -43,7 +43,7 @@ const purchasedItem = (list) => {
             :key="list.items.id"
             :class="{ strikeout: items.purchased }"
           >
-            {{ items.itemName }}
+            {{ items.name }}
             <input v-model="items.purchased" type="checkbox" />
           </li>
         </ul>

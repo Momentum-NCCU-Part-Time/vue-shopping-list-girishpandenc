@@ -8,7 +8,7 @@ import Delete from './Delete.vue'
 const lists = ref([])
 const newItem = ref('')
 
-fetch('http://localhost:3000/lists/', {
+fetch('http://localhost:3000/shoppinglists/', {
   method: 'GET',
   headers: { 'Content-Type': 'application/json' }
 })
@@ -16,7 +16,7 @@ fetch('http://localhost:3000/lists/', {
   .then((data) => (lists.value = data))
 
 const getLists = () => {
-  fetch('http://localhost:3000/lists/', {
+  fetch('http://localhost:3000/shoppinglists/', {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' }
   })

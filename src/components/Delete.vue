@@ -6,7 +6,7 @@ const props = defineProps({ list: Object })
 const emit = defineEmits(['listDeleted'])
 
 const deleteList = (list) => {
-  fetch('http://localhost:3000/lists/' + props.list.id, {
+  fetch('http://localhost:3000/shoppinglists/' + props.list._id, {
     method: 'DELETE'
   })
     .then((res) => res.json())
